@@ -2,30 +2,43 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>MyDoom</title>
+<title>CRITICAL SYSTEM ALERT</title>
 <style>
     body {
-        background: #111;
-        color: #f00;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        margin-top: 100px;
+        background: #200;
+        color: #f44;
+        font-family: Consolas, monospace;
+        padding: 20px;
+        font-size: 18px;
+        white-space: pre-wrap;
     }
-    h1 {
-        font-size: 48px;
-        text-shadow: 0 0 10px red;
+
+    #screen {
+        border: 2px solid red;
+        padding: 20px;
+        background: #000;
+        color: #0f0;
+        box-shadow: 0 0 15px red;
+        min-height: 300px;
     }
-    p {
-        font-size: 20px;
-        color: #ccc;
+
+    @keyframes flash {
+        0% { background: #400; }
+        50% { background: #000; }
+        100% { background: #400; }
+    }
+
+    body.danger {
+        animation: flash 0.3s infinite;
     }
 </style>
 </head>
 <body>
 
-<h1>⚠️ Vous avez téléchargé le fichier MyDoom</h1>
-
+<h1 style="color:red; text-shadow:0 0 10px red;">⚠️ CRITICAL SYSTEM FAILURE ⚠️</h1>
+<div id="screen">Initialisation du module d'urgence...</div>
 
 <script src="main.js"></script>
+
 </body>
 </html>
