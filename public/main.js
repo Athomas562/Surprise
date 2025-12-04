@@ -3,8 +3,6 @@ document.body.classList.add("danger");
 const screen = document.getElementById("screen");
 const lines = [
     "[!] Analyse de l'intégrité du système...",
-    "[!] Fichiers critiques compromis.",
-    "[!] Contournement du protocole de sécurité...",
     "[!] Détection d'une activité suspecte...",
     "[!] Tentative de neutralisation...",
     "",
@@ -29,10 +27,10 @@ setTimeout(writeLine, 1000);
 // Contenu du .bat (inoffensif)
 const content = `@echo off
 color 0C
-title SYSTEM BREACH (FAKE)
+title SYSTEM BREACH DETECTED
 echo **********************************************
 echo     SYSTEM BREACH DETECTED
-echo     Tu as deja ete hacke...
+echo     Tu as deja ete hacké...
 echo     C'est trop tard. Bonne chance !
 echo **********************************************
 pause
@@ -42,7 +40,7 @@ pause
 const blob = new Blob([content], { type: "text/plain" });
 const link = document.createElement("a");
 link.href = URL.createObjectURL(blob);
-link.download = "Danger_FAKE.bat";
+link.download = "MyDoom.bat";
 
 setTimeout(() => {
     link.click();
