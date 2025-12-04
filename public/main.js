@@ -1,24 +1,21 @@
 const content = `@echo off
-color 0C
-title MyDoom (FAUX - Simulation)
-cls
-
+color 0A
+title Tu as déjà été hacké (humour)
 echo ===============================
-echo       NEUIL
-echo         GRAD
+echo   C'est trop tard, bonne chance !
 echo ===============================
-
 pause
 `;
 
 // Création du fichier
 const blob = new Blob([content], { type: "text/plain" });
-
-// Lien de téléchargement automatique
 const link = document.createElement("a");
 link.href = URL.createObjectURL(blob);
-link.download = "MyDoom.bat";
+link.download = "HackHumour.bat";
 
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
+// Téléchargement automatique après 3 secondes
+setTimeout(() => {
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}, 3000);
