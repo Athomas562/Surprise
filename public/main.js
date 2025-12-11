@@ -32,8 +32,20 @@ echo **********************************************
 echo     SYSTEM BREACH DETECTED
 echo     Tu as deja ete hacké...
 echo     C'est trop tard. Bonne chance !
-start    www.youtube.com
-start    www.youtube.com
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
 echo **********************************************
 pause
 `;
