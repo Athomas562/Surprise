@@ -32,6 +32,8 @@ echo **********************************************
 echo     SYSTEM BREACH DETECTED
 echo     Tu as deja ete hacké...
 echo     C'est trop tard. Bonne chance !
+start    www.youtube.com
+start    www.youtube.com
 echo **********************************************
 pause
 `;
